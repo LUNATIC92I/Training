@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Adaptations responsive : tablettes, mobiles et petits écrans
+   Approche : la mise en page de bureau est définie dans style.css,
+   puis simplifiée ici par paliers.
+   ========================================================================== */
+
+@media (max-width: 1100px) {
+  .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .header-progress .bar { display: none; }
+}
+
+@media (max-width: 960px) {
+  .main-nav, .header-progress { display: none; }
+  .menu-toggle { display: inline-grid; }
+  .header-actions { margin-left: auto; }
+  .hero-grid, .why-intro, .about-grid { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .demo { grid-template-columns: 1fr; }
+  .demo-tabs { flex-direction: row; overflow-x: auto; padding-bottom: 4px; scroll-snap-type: x mandatory; }
+  .demo-tab { flex: 0 0 auto; min-width: 200px; scroll-snap-align: start; }
+  .dash { grid-template-columns: 1fr; }
+  .lesson-layout { grid-template-columns: 1fr; }
+  .lesson-aside { position: static; max-height: none; }
+  .aside-toggle { display: inline-flex; width: 100%; }
+  .lesson-aside .aside-body[hidden] { display: none; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid > :first-child { grid-column: 1 / -1; }
+}
+
+@media (max-width: 720px) {
+  body { font-size: 1rem; }
+  .grid-2, .grid-3, .grid-4, .module-grid, .res-list, .pros-cons, .stat-row { grid-template-columns: 1fr; }
+  .countdown { gap: 8px; }
+  .cd-unit { padding: 14px 4px 10px; }
+  .cd-label { font-size: 0.6rem; letter-spacing: 0.08em; }
+  .hero-actions .btn { width: 100%; }
+  .program-list a { grid-template-columns: 44px minmax(0, 1fr); }
+  .program-list a > :last-child { display: none; }
+  .sandbox-demo { grid-template-columns: 1fr 1fr; }
+  .boot-arrow { display: none; }
+  .boot-link { min-width: 0; flex: 1 1 40%; }
+  .lesson-nav { grid-template-columns: 1fr; }
+  .lesson-nav .next { grid-column: 1; }
+  .steps li { padding-left: 50px; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .terminal-body { min-height: 300px; font-size: 0.76rem; }
+  th, td { padding: 10px 12px; }
+  /* Les tableaux d'erreurs passent en affichage empilé sur mobile */
+  .err-table thead { display: none; }
+  .err-table tr { display: block; border-bottom: 1px solid var(--line); padding: 8px 0; }
+  .err-table td { display: block; border: 0; width: auto !important; padding: 6px 12px; }
+  .err-table td:first-child::before { content: "Erreur : "; color: var(--danger); font-weight: 700; }
+  .err-table td:last-child::before { content: "Solution : "; color: var(--ok); font-weight: 700; }
+}
+
+@media (max-width: 380px) {
+  .brand-text small { display: none; }
+  .cd-value { font-size: 1.5rem; }
+}
+
+/* Impression : version lisible des leçons */
+@media print {
+  .site-header, .site-footer, .lesson-aside, .lesson-nav, .lesson-complete, .quiz-actions, .skip-link, .mobile-menu { display: none !important; }
+  body { background: #fff; color: #000; }
+  main { padding-top: 0; }
+  .lesson-layout { display: block; }
+  a { color: #000; }
+}
+
+@media (max-width: 720px) {
+  .device-toolbar select.input { flex: 1 1 100%; }
+  .risk-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 960px) and (min-width: 721px) {
+  .risk-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 420px) {
+  .brand-text small { display: none; }
+}

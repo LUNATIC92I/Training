@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formation gratuite Sécurité Android et GrapheneOS | Hissein Banaye Hassan</title>
+  <meta name="description" content="Formation gratuite en sécurité Android jusqu'au 31 décembre 2026 : protéger son smartphone, comprendre les menaces, installer GrapheneOS pas à pas. 10 modules, quiz et examen final.">
+  <meta name="keywords" content="Sécurité Android, formation GrapheneOS, installer GrapheneOS, cybersécurité mobile, protéger son smartphone, confidentialité Android, sécurité mobile gratuite">
+  <meta name="author" content="Hissein Banaye Hassan">
+  <meta name="theme-color" content="#080B12">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <link rel="canonical" href="https://lunatic92i.github.io/training/android-security-training/">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Formation Sécurité Android & GrapheneOS">
+  <meta property="og:title" content="Reprenez le contrôle de votre sécurité numérique">
+  <meta property="og:description" content="Formation gratuite jusqu'au 31 décembre 2026, offerte par Hissein Banaye Hassan : sécurité Android, vie privée et installation de GrapheneOS.">
+  <meta property="og:url" content="https://lunatic92i.github.io/training/android-security-training/">
+  <meta property="og:image" content="https://lunatic92i.github.io/training/android-security-training/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Formation gratuite Sécurité Android et GrapheneOS, offerte par Hissein Banaye Hassan">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Sécurité Android et découverte de GrapheneOS",
+    "description": "Formation complète et progressive en dix modules : architecture de sécurité Android, menaces, sécurisation d'un smartphone, GrapheneOS, installation, configuration avancée, vie privée, audit et cas pratiques.",
+    "inLanguage": "fr",
+    "url": "https://lunatic92i.github.io/training/android-security-training/",
+    "provider": { "@type": "Person", "name": "Hissein Banaye Hassan" },
+    "creator": { "@type": "Person", "name": "Hissein Banaye Hassan" },
+    "isAccessibleForFree": true,
+    "educationalLevel": "Débutant à avancé",
+    "teaches": ["Sécurité Android", "Protection de la vie privée sur mobile", "Installation de GrapheneOS", "Audit de sécurité mobile"],
+    "numberOfCredits": 0,
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": "online",
+      "courseWorkload": "PT40H",
+      "endDate": "2026-12-31"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "XOF",
+      "category": "Gratuit",
+      "availabilityEnds": "2026-12-31T23:59:00+00:00"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- EN-TÊTE ============================================================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Accueil : Formation Sécurité Android et GrapheneOS">
+        <img class="brand-mark" src="assets/icons/logo.svg" alt="" width="34" height="34">
+        <span class="brand-text">Sécurité Android<small>Formation H. Banaye Hassan</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale" data-nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="formation.html">Espace apprenant</a></li>
+          <li><a href="modules.html">Modules</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="header-progress" href="formation.html" data-header-progress><span class="bar"><span></span></span><span data-pct>0 %</span></a>
+        <button class="icon-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Activer le thème clair">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="mobile-menu-top">
+      <span class="brand"><img class="brand-mark" src="assets/icons/logo.svg" alt="" width="34" height="34"><span class="brand-text">Sécurité Android</span></span>
+      <button class="icon-btn" type="button" data-menu-close aria-label="Fermer le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav aria-label="Navigation mobile" data-nav>
+      <ol>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="formation.html">Espace apprenant</a></li>
+        <li><a href="modules.html">Modules</a></li>
+        <li><a href="ressources.html">Ressources</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ol>
+    </nav>
+    <p class="mobile-menu-foot">Formation gratuite jusqu'au 31 décembre 2026, offerte par Hissein Banaye Hassan.</p>
+  </div>
+
+  <main id="contenu">
+    <!-- HÉROS ============================================================ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="intro-seq">
+          <p class="eyebrow">Formation gratuite · Cybersécurité mobile</p>
+          <h1 id="hero-title">Reprenez le contrôle de votre <span class="hl">sécurité numérique</span></h1>
+          <p class="lead">Apprenez à sécuriser votre smartphone Android, protéger vos données personnelles et découvrir GrapheneOS à travers une formation technique complète, progressive et accessible à tous.</p>
+          <div class="hero-offer">
+            <span class="offer-icon pulse" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.6-3.3 8.4-8 9-4.7-.6-8-4.4-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
+            <strong>FORMATION GRATUITE</strong>
+            <span>Offerte par <b>Hissein Banaye Hassan</b>. Accessible gratuitement jusqu'au <b>31 décembre 2026</b>.</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="formation.html?lecon=m1-l1">Commencer la formation
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost" href="#programme">Découvrir le programme</a>
+          </div>
+          <p class="muted mono" style="font-size:.8rem;margin-top:20px">10 modules · 113 leçons · quiz corrigés · examen final de 50 questions · sans inscription</p>
+        </div>
+        <div class="intro-terminal">
+          <div class="terminal scanline" aria-label="Démonstration d'un audit de sécurité en ligne de commande">
+            <div class="terminal-bar"><i></i><i></i><i></i><span>audit-pixel · adb</span></div>
+            <div class="terminal-body" data-terminal aria-hidden="true"></div>
+            <div class="terminal-foot">Commandes ADB réelles, sorties illustratives. Voir module 9.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPTE À REBOURS ================================================== -->
+    <section class="section" style="padding-top:0" aria-labelledby="cd-title">
+      <div class="container">
+        <div class="countdown-panel glow-border reveal">
+          <div class="grid grid-2" style="align-items:center">
+            <div>
+              <p class="eyebrow">Accès libre et gratuit</p>
+              <h2 id="cd-title" style="font-size:clamp(1.4rem,2.6vw,2rem)">Gratuité jusqu'au 31 décembre 2026 à 23h59</h2>
+              <p class="muted" style="margin:0">Heure d'Abidjan (GMT). Aucun compte, aucune carte bancaire, aucune donnée personnelle demandée : la progression reste dans votre navigateur.</p>
+            </div>
+            <div data-countdown></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POURQUOI ========================================================== -->
+    <section class="section section-alt" id="pourquoi" aria-labelledby="why-title">
+      <div class="container">
+        <div class="why-intro reveal">
+          <div class="section-head" style="margin-bottom:0">
+            <p class="eyebrow">Pourquoi se former</p>
+            <h2 id="why-title">Votre smartphone est devenu votre coffre-fort, votre bureau et votre identité</h2>
+          </div>
+          <p class="lead">Messages, photos, comptes bancaires, codes d'authentification, documents professionnels, déplacements : un téléphone concentre aujourd'hui plus d'informations sensibles qu'un ordinateur. Comprendre comment il est attaqué est la première étape pour bien le protéger.</p>
+        </div>
+        <div class="stat-row reveal-stagger">
+          <div class="stat"><b>Accès permanent</b><span>Toujours allumé, toujours connecté, toujours sur vous.</span></div>
+          <div class="stat"><b>Point d'entrée unique</b><span>Il reçoit les codes de validation de vos autres comptes.</span></div>
+          <div class="stat"><b>Écosystème ouvert</b><span>Des millions d'applications aux pratiques très inégales.</span></div>
+        </div>
+
+        <h3 style="margin-top:56px">Les dix risques étudiés dans cette formation</h3>
+        <div class="grid grid-3 risk-grid reveal-stagger" style="margin-top:20px">
+          <article class="card card-interactive risk-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/></svg></div><span class="card-index">R01</span><h4>Espionnage numérique</h4><p>Logiciels espions installés à votre insu, capables de lire messages, appels et position.</p></article>
+          <article class="card card-interactive risk-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9l6 6M15 9l-6 6"/></svg></div><span class="card-index">R02</span><h4>Applications malveillantes</h4><p>Fausses applications, chevaux de Troie bancaires et APK piégés diffusés hors des magasins.</p></article>
+          <article class="card card-interactive risk-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16v12H4z"/><path d="M8 7V5h8v2M12 11v4"/></svg></div><span class="card-index">R03</span><h4>Vol de données personnelles</h4><p>Exfiltration de contacts, photos, documents et identifiants stockés sur l'appareil.</p></article>
+          <article class="card card-interactive risk-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></div><span class="card-index">R04</span><h4>Collecte excessive de données</h4><p>Applications et SDK qui aspirent bien plus d'informations que nécessaire à leur fonction.</p></article>
+          <article class="card card-interactive risk-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v10H8l-4 4z"/><path d="M9 11h6"/></svg></div><span class="card-index">R05</span><h4>Attaques par phishing</h4><p>SMS, e-mails et messages imitant votre banque, un livreur ou une administration.</p></article>
+          <article class="card card-interactive risk-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/><path d="M17 3l4 4"/></svg></div><span class="card-index">R06</span><h4>Compromission des comptes</h4><p>Prise de contrôle de votre compte Google, de vos messageries ou de vos réseaux sociaux.</p></article>
+          <article class="card card-interactive risk-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9.5 17h-19L12 3z"/><path d="M12 10v4.5M12 17.5v.5"/></svg></div><span class="card-index">R07</span><h4>Vulnérabilités Android</h4><p>Failles du système ou des composants matériels exploitées sur les appareils non mis à jour.</p></article>
+          <article class="card card-interactive risk-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><span class="card-index">R08</span><h4>Vol ou perte du smartphone</h4><p>Accès physique à vos données, à vos comptes ouverts et à vos codes de validation.</p></article>
+          <article class="card card-interactive risk-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div><span class="card-index">R09</span><h4>Pistage publicitaire</h4><p>Identifiants publicitaires, traceurs et courtiers en données qui reconstituent votre profil.</p></article>
+          <article class="card card-interactive risk-card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0M8 15.5a6 6 0 0 1 8 0"/><circle cx="12" cy="19" r="1"/><path d="M3 3l18 18"/></svg></div><span class="card-index">R10</span><h4>Attaques sur les communications</h4><p>Wi-Fi piégés, interception des messages non chiffrés et usurpation de carte SIM.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÉMONSTRATIONS ==================================================== -->
+    <section class="section" id="mecanismes" aria-labelledby="demo-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Sous le capot</p>
+          <h2 id="demo-title">Les mécanismes de sécurité d'Android, en démonstration</h2>
+          <p>Trois protections fondamentales que vous étudierez en détail dans le module 1. Manipulez-les pour comprendre ce qu'elles bloquent réellement.</p>
+        </div>
+        <div class="demo reveal" data-demos>
+          <div class="demo-tabs" role="tablist" aria-label="Mécanismes de sécurité" aria-orientation="vertical">
+            <button class="demo-tab" role="tab" id="tab-sandbox" aria-controls="demo-sandbox" aria-selected="true" type="button"><b>Bac à sable applicatif</b><small>Isolement des applications</small></button>
+            <button class="demo-tab" role="tab" id="tab-boot" aria-controls="demo-boot" aria-selected="false" tabindex="-1" type="button"><b>Démarrage vérifié</b><small>Chaîne de confiance</small></button>
+            <button class="demo-tab" role="tab" id="tab-perm" aria-controls="demo-perm" aria-selected="false" tabindex="-1" type="button"><b>Permissions à l'exécution</b><small>Votre consentement</small></button>
+          </div>
+          <div class="demo-stage">
+            <div class="demo-panel" role="tabpanel" id="demo-sandbox" aria-labelledby="tab-sandbox">
+              <div class="demo-canvas">
+                <div class="sandbox-demo">
+                  <div class="sb-app" data-app="banque"><b>Banque</b><span class="uid">UID u0_a142</span><span class="sb-data">solde, IBAN</span></div>
+                  <div class="sb-app" data-app="messagerie"><b>Messagerie</b><span class="uid">UID u0_a157</span><span class="sb-data">conversations</span></div>
+                  <div class="sb-app is-attacker" data-app="jeu"><b>Jeu douteux</b><span class="uid">UID u0_a203</span><span class="sb-data">publicités</span></div>
+                  <div class="sb-kernel">Noyau Linux · permissions UNIX · SELinux · Binder</div>
+                </div>
+              </div>
+              <div class="demo-controls">
+                <button class="btn btn-sm" type="button" data-action="attack">Le jeu lit les données bancaires</button>
+                <button class="btn btn-sm btn-ghost" type="button" data-action="binder">Le jeu demande la position</button>
+              </div>
+              <p class="demo-log" aria-live="polite">Chaque application s'exécute avec son propre identifiant Linux. Lancez une tentative d'accès.</p>
+            </div>
+            <div class="demo-panel" role="tabpanel" id="demo-boot" aria-labelledby="tab-boot" hidden>
+              <div class="demo-canvas">
+                <div>
+                  <div class="boot-chain">
+                    <div class="boot-link">Boot ROM<small>racine matérielle</small></div><span class="boot-arrow" aria-hidden="true">→</span>
+                    <div class="boot-link">Bootloader<small>signé</small></div><span class="boot-arrow" aria-hidden="true">→</span>
+                    <div class="boot-link">vbmeta<small>AVB</small></div><span class="boot-arrow" aria-hidden="true">→</span>
+                    <div class="boot-link">Noyau<small>boot</small></div><span class="boot-arrow" aria-hidden="true">→</span>
+                    <div class="boot-link">Système<small>dm-verity</small></div>
+                  </div>
+                  <p class="boot-state" aria-live="polite">Prêt</p>
+                </div>
+              </div>
+              <div class="demo-controls">
+                <button class="btn btn-sm" type="button" data-action="boot">Démarrage normal</button>
+                <button class="btn btn-sm btn-ghost" type="button" data-action="tamper">Noyau modifié</button>
+              </div>
+              <p class="demo-log" aria-live="polite">Chaque étage vérifie la signature du suivant avant de lui passer la main.</p>
+            </div>
+            <div class="demo-panel" role="tabpanel" id="demo-perm" aria-labelledby="tab-perm" hidden>
+              <div class="demo-canvas">
+                <div class="perm-phone"><div class="ph-notch"></div><div class="perm-screen"></div></div>
+              </div>
+              <div class="demo-controls">
+                <button class="btn btn-sm" type="button" data-action="next">Demande suivante</button>
+              </div>
+              <p class="demo-log" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARATIF ======================================================== -->
+    <section class="section section-alt" id="comparatif" aria-labelledby="cmp-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Comparatif</p>
+          <h2 id="cmp-title">Android standard et GrapheneOS : des choix différents</h2>
+          <p>GrapheneOS est un système d'exploitation libre, basé sur le projet Android Open Source (AOSP), centré sur la sécurité et la confidentialité. Il n'est pas « meilleur en tout » : il fait des compromis assumés.</p>
+        </div>
+        <div class="compare-wrap reveal">
+          <table class="compare-table">
+            <caption>Comparaison simplifiée. Les détails techniques sont étudiés dans le module 4. Sources : documentation officielle Android et GrapheneOS.</caption>
+            <thead><tr><th scope="col">Critère</th><th scope="col">Android standard (fabricant)</th><th scope="col">GrapheneOS</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Appareils compatibles</th><td class="cell-yes">Des milliers de modèles, tous fabricants</td><td class="cell-part">Uniquement certains Google Pixel listés officiellement</td></tr>
+              <tr><th scope="row">Durée des mises à jour</th><td class="cell-part">Variable selon le fabricant et le modèle</td><td class="cell-yes">Suit la période de support des Pixel, avec publication rapide des correctifs</td></tr>
+              <tr><th scope="row">Services Google</th><td>Intégrés au système avec des privilèges étendus</td><td>Optionnels, installables comme applications ordinaires en bac à sable</td></tr>
+              <tr><th scope="row">Permission « Réseau » par application</th><td class="cell-no">Non disponible</td><td class="cell-yes">Oui, révocable pour chaque application</td></tr>
+              <tr><th scope="row">Permission « Capteurs » par application</th><td class="cell-no">Non disponible</td><td class="cell-yes">Oui</td></tr>
+              <tr><th scope="row">Durcissement contre l'exploitation de failles</th><td class="cell-part">Protections standard d'Android</td><td class="cell-yes">Renforcements supplémentaires (allocateur mémoire hardened_malloc, noyau et bibliothèques durcis)</td></tr>
+              <tr><th scope="row">Redémarrage automatique après inactivité</th><td class="cell-part">Selon la version et le fabricant</td><td class="cell-yes">Oui, délai configurable</td></tr>
+              <tr><th scope="row">Démarrage vérifié avec bootloader reverrouillé</th><td class="cell-yes">Oui, avec les clés du fabricant</td><td class="cell-yes">Oui, avec la clé GrapheneOS</td></tr>
+              <tr><th scope="row">Paiement sans contact Google Wallet</th><td class="cell-yes">Oui</td><td class="cell-no">Non pris en charge</td></tr>
+              <tr><th scope="row">Prise en main</th><td class="cell-yes">Familière</td><td class="cell-part">Accessible, mais demande un temps d'apprentissage</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pros-cons reveal-stagger">
+          <div class="card">
+            <h3>Ce que GrapheneOS apporte</h3>
+            <ul>
+              <li>Une surface d'attaque réduite et des protections supplémentaires contre l'exploitation des failles.</li>
+              <li>Des contrôles inédits : permissions Réseau et Capteurs, Storage Scopes, Contact Scopes.</li>
+              <li>Google Play optionnel et sans privilèges particuliers.</li>
+              <li>Des profils utilisateurs plus complets pour cloisonner ses usages.</li>
+              <li>Un démarrage vérifié complet et une vérification de l'installation par attestation matérielle.</li>
+            </ul>
+          </div>
+          <div class="card cons">
+            <h3>Ses limites, en toute honnêteté</h3>
+            <ul>
+              <li>Ne fonctionne que sur une liste précise de Google Pixel.</li>
+              <li>Certaines applications bancaires ou de paiement peuvent refuser de fonctionner.</li>
+              <li>Ne protège pas contre le phishing, un mot de passe faible ou une application à laquelle vous donnez tout accès.</li>
+              <li>L'installation efface toutes les données et demande de la rigueur.</li>
+              <li>Aucun système ne rend un appareil invulnérable : la sécurité reste un ensemble de pratiques.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMME ========================================================= -->
+    <section class="section" id="programme" aria-labelledby="prog-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Programme</p>
+          <h2 id="prog-title">Dix modules, du débutant à l'avancé</h2>
+          <p>Chaque leçon comprend un objectif, des explications techniques, une illustration, une procédure pas à pas, des exemples, les erreurs à éviter, des recommandations, un résumé et un questionnaire corrigé.</p>
+        </div>
+        <ol class="program-list reveal" data-program></ol>
+        <div class="hero-actions" style="margin-top:32px">
+          <a class="btn btn-primary" href="formation.html">Ouvrir l'espace apprenant</a>
+          <a class="btn btn-ghost" href="modules.html">Rechercher dans les modules</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÉTHODE =========================================================== -->
+    <section class="section section-alt" aria-labelledby="method-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Méthode</p>
+          <h2 id="method-title">Apprendre, appliquer, vérifier</h2>
+        </div>
+        <div class="grid grid-3 reveal-stagger">
+          <article class="card"><span class="card-index">01 · Comprendre</span><h3>Des bases solides</h3><p>Avant de modifier un réglage, vous comprenez ce qu'il protège et contre quoi. Les notions techniques sont expliquées simplement, puis approfondies.</p></article>
+          <article class="card"><span class="card-index">02 · Appliquer</span><h3>Des procédures concrètes</h3><p>Chaque leçon pratique détaille les étapes sur les principales interfaces Android, avec le résultat attendu et les erreurs courantes.</p></article>
+          <article class="card"><span class="card-index">03 · Vérifier</span><h3>Des évaluations corrigées</h3><p>Un questionnaire à la fin de chaque leçon, huit cas pratiques et un examen final de 50 questions avec explications détaillées.</p></article>
+        </div>
+        <div class="alert alert-info reveal" style="margin-top:32px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>
+          <p><b>Respect de votre vie privée.</b> Ce site n'utilise ni cookie, ni outil de mesure d'audience, ni police ou script externe. Votre progression est enregistrée uniquement dans votre navigateur.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE ========================================================= -->
+    <section class="signature" aria-label="Signature de la formation">
+      <blockquote class="reveal">« Votre smartphone contient une partie de votre vie. Apprenez à la protéger. »</blockquote>
+      <cite>HISSEIN BANAYE HASSAN</cite>
+      <p>Formation gratuite en sécurité Android et découverte de GrapheneOS.</p>
+      <a class="btn btn-primary" href="formation.html?lecon=m1-l1" style="margin-top:12px">Commencer la formation</a>
+    </section>
+  </main>
+
+  <!-- PIED DE PAGE ======================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><img class="brand-mark" src="assets/icons/logo.svg" alt="" width="34" height="34"><span class="brand-text">Sécurité Android<small>&amp; GrapheneOS</small></span></a>
+          <p class="muted" style="margin-top:16px;max-width:46ch">Formation gratuite en sécurité Android et découverte de GrapheneOS, offerte par Hissein Banaye Hassan. Accès gratuit jusqu'au 31 décembre 2026.</p>
+          <p class="muted" style="font-size:.82rem;max-width:60ch">GrapheneOS, Android, Google Pixel et Google Play sont des marques de leurs détenteurs respectifs. Cette formation indépendante n'est ni affiliée ni approuvée par le projet GrapheneOS ou par Google.</p>
+        </div>
+        <div>
+          <h2>Formation</h2>
+          <ul>
+            <li><a href="formation.html">Espace apprenant</a></li>
+            <li><a href="modules.html">Tous les modules</a></li>
+            <li><a href="formation.html?examen=final">Examen final</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Informations</h2>
+          <ul>
+            <li><a href="ressources.html">Ressources officielles</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="https://grapheneos.org/" rel="noopener" target="_blank">Site officiel GrapheneOS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Hissein Banaye Hassan · Formation offerte gratuitement</span>
+        <span class="mono">Aucun cookie · Aucun traceur</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data/catalog.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/interactions.js"></script>
+</body>
+</html>
