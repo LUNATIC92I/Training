@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.CyberPost" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/cp_black</item>
+        <item name="android:statusBarColor">@color/cp_black</item>
+        <item name="android:navigationBarColor">@color/cp_night</item>
+    </style>
+</resources>

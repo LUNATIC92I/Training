@@ -1,0 +1,3 @@
+# CyberPost AI : une seule entrée cron, exécutée chaque minute par l'utilisateur du serveur web.
+# Installer avec : sudo crontab -u www-data deploy/crontab.txt  (adapter le chemin)
+* * * * * cd /var/www/cyberpost/backend && php artisan schedule:run >> /dev/null 2>&1

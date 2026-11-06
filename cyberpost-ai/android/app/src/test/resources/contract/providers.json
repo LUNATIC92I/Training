@@ -1,0 +1,1 @@
+{"data":[{"key":"anthropic","name":"Anthropic Claude","configured":true,"model":"e2e-model"},{"key":"openai","name":"OpenAI","configured":false,"model":null},{"key":"custom","name":"Fournisseur compatible OpenAI","configured":false,"model":null}]}
